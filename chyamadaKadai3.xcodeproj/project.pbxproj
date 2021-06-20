@@ -13,9 +13,11 @@
 		8A787005267F3A5F00F1AF71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A787003267F3A5F00F1AF71 /* Main.storyboard */; };
 		8A787007267F3A6300F1AF71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A787006267F3A6300F1AF71 /* Assets.xcassets */; };
 		8A78700A267F3A6300F1AF71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A787008267F3A6300F1AF71 /* LaunchScreen.storyboard */; };
+		E5AD6A11D6E0C45D78A691A5 /* Pods_chyamadaKadai3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB565D206B2B695ECB04F531 /* Pods_chyamadaKadai3.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		535135D1EF1AF596759C5B84 /* Pods-chyamadaKadai3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chyamadaKadai3.release.xcconfig"; path = "Target Support Files/Pods-chyamadaKadai3/Pods-chyamadaKadai3.release.xcconfig"; sourceTree = "<group>"; };
 		8A786FFA267F3A5F00F1AF71 /* chyamadaKadai3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chyamadaKadai3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A786FFD267F3A5F00F1AF71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A786FFF267F3A5F00F1AF71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		8A787006267F3A6300F1AF71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A787009267F3A6300F1AF71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A78700B267F3A6300F1AF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A395489DAB53ACEF5D6FDB7 /* Pods-chyamadaKadai3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chyamadaKadai3.debug.xcconfig"; path = "Target Support Files/Pods-chyamadaKadai3/Pods-chyamadaKadai3.debug.xcconfig"; sourceTree = "<group>"; };
+		BB565D206B2B695ECB04F531 /* Pods_chyamadaKadai3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chyamadaKadai3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AD6A11D6E0C45D78A691A5 /* Pods_chyamadaKadai3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		549A87525221B5FF21506572 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB565D206B2B695ECB04F531 /* Pods_chyamadaKadai3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A786FF1267F3A5F00F1AF71 = {
 			isa = PBXGroup;
 			children = (
 				8A786FFC267F3A5F00F1AF71 /* chyamadaKadai3 */,
 				8A786FFB267F3A5F00F1AF71 /* Products */,
+				C13D63432C967F6DAC8CC3BA /* Pods */,
+				549A87525221B5FF21506572 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = chyamadaKadai3;
 			sourceTree = "<group>";
 		};
+		C13D63432C967F6DAC8CC3BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A395489DAB53ACEF5D6FDB7 /* Pods-chyamadaKadai3.debug.xcconfig */,
+				535135D1EF1AF596759C5B84 /* Pods-chyamadaKadai3.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A78700E267F3A6300F1AF71 /* Build configuration list for PBXNativeTarget "chyamadaKadai3" */;
 			buildPhases = (
+				49467EF8947DFC87513130CA /* [CP] Check Pods Manifest.lock */,
 				8A786FF6267F3A5F00F1AF71 /* Sources */,
 				8A786FF7267F3A5F00F1AF71 /* Frameworks */,
 				8A786FF8267F3A5F00F1AF71 /* Resources */,
+				8A52CA83267FDACC00F45961 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49467EF8947DFC87513130CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chyamadaKadai3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A52CA83267FDACC00F45961 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n    swiftlint autocorrect --format\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A786FF6267F3A5F00F1AF71 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		8A78700F267F3A6300F1AF71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A395489DAB53ACEF5D6FDB7 /* Pods-chyamadaKadai3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		8A787010267F3A6300F1AF71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 535135D1EF1AF596759C5B84 /* Pods-chyamadaKadai3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
